@@ -21,7 +21,6 @@ const parent = React.createElement("div", { id: "parent" }, [
     React.createElement("h2", {}, "I am an h2 tag"),
   ]),
 ]);
-
 // const heading = React.createElement(
 //   "h1",
 //   { id: "heading" }, //Attribute
