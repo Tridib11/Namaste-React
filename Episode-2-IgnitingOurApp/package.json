@@ -1,0 +1,24 @@
+{
+  "name": "episode-2-ignitingourapp",
+  "version": "1.0.0",
+  "description": "This is namaste react by Tridib Ghosh",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tridib11/Namaste-React.git"
+  },
+  "keywords": [
+    "react",
+    "namaste",
+    "react"
+  ],
+  "author": "tridib",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tridib11/Namaste-React/issues"
+  },
+  "homepage": "https://github.com/Tridib11/Namaste-React#readme"
+}
