@@ -1,6 +1,7 @@
 # Namaste React 🚀
 
-# Parcel
+# Parcel 📦
+
 - Dev Build
 - Local Server
 - HMR - Hot Module Replacement(The refresh that it makes updateing the  Website)
