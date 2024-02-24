@@ -10,15 +10,14 @@
     "type": "git",
     "url": "git+https://github.com/Tridib11/Namaste-React.git"
   },
-  "keywords": [
-    "react",
-    "namaste",
-    "react"
-  ],
+  "keywords": [],
   "author": "tridib",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Tridib11/Namaste-React/issues"
   },
-  "homepage": "https://github.com/Tridib11/Namaste-React#readme"
+  "homepage": "https://github.com/Tridib11/Namaste-React#readme",
+  "devDependencies": {
+    "parcel": "^2.11.0"
+  }
 }
