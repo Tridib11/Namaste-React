@@ -11,7 +11,11 @@ const jsxHeading = <h1 id="Heading" className="head">Namaste React using JS</h1>
 // -> Class Based Component - OLD
 // -> Functional Component - NEW
 
+//React Functional Component
 
+const HeadingComponent=()=>{
+  return <h1>Namaste React Functional Component</h1>
+}
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
