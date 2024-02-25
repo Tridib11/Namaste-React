@@ -5,6 +5,8 @@ import ReactDOM from "react-dom/client";
 
 //JSX(transpiled before it reaches the JS engine) - PARCEL - Babel
 
+//React element
+const Title = <h1 className="head">Namaste React using JS</h1>;
 //Component
 const TitleComponent = () => <h1 className="head">Namaste React using JS</h1>;
 
@@ -14,12 +16,13 @@ const TitleComponent = () => <h1 className="head">Namaste React using JS</h1>;
 
 //React Functional Component
 
-const number=1000
+const number = 1000;
 
 const HeadingComponent = () => (
   //This is component composition - Composing two Component into one Aother
   <div id="container">
-    {100+200}
+    {Title}
+    
     <h1 className="heading">Namaste React Functional Component</h1>
   </div>
 );
