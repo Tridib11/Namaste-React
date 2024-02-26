@@ -42,8 +42,12 @@ const Header = () => {
 
 const ResturantCard = () =>{
   return (
-    <div className="res-card">
+    <div className="res-card" style={{backgroundColor:"#f0f0f0"}}>
+      <img className="resturant-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_1024/9bdc7ca1bcd102b8d445469552c24e25" />
       <h3>Meghana Foods</h3>
+      <h4>Pizza</h4>
+      <h4>4.4 ⭐</h4>
+      <h4>38 mins</h4>
     </div>
   )
 }
@@ -52,7 +56,7 @@ const Body = () =>{
     <div className="body">
       <div className="search">Search</div>
       <div className="resturant-container">
-        <ResturantCard></ResturantCard>
+        <ResturantCard/>
       </div>
     </div>
   )

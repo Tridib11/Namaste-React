@@ -22,7 +22,11 @@
     width: 200px;
     height: 300px;
     border: 1px solid black;
+    padding: 10px
 }
 .search{
     padding: 10px;
+}
+.resturant-logo{
+    width: 100%;
 }
