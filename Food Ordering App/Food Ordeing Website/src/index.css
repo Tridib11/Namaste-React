@@ -23,9 +23,9 @@
     flex-wrap: wrap;
 }
 .res-card {
-    margin: 5px;
-    width: 200px;
-    height: 300px;
+    margin: 10px;
+    width: 250px;
+    
     padding: 10px;
     transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
 }
@@ -40,4 +40,5 @@
 }
 .resturant-logo{
     width: 100%;
+    height: 40%;
 }
