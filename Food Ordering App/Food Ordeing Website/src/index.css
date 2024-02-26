@@ -18,12 +18,23 @@
     margin: 10px;
 }
 
-.res-card{
+.resturant-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.res-card {
+    margin: 5px;
     width: 200px;
     height: 300px;
-    border: 1px solid black;
-    padding: 10px
+    padding: 10px;
+    transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
 }
+
+.res-card:hover {
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adding shadow effect on hover */
+}
+
 .search{
     padding: 10px;
 }
