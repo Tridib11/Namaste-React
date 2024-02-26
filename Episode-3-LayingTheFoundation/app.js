@@ -16,13 +16,13 @@ const TitleComponent = () => <h1 className="head">Namaste React using JS</h1>;
 
 //React Functional Component
 
+
 const number = 1000;
 
 const HeadingComponent = () => (
   //This is component composition - Composing two Component into one Aother
   <div id="container">
     {Title}
-    
     <h1 className="heading">Namaste React Functional Component</h1>
   </div>
 );
