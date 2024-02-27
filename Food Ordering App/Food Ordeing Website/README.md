@@ -33,6 +33,6 @@ Currently, two official plugins are available:
   export default Component;
   import component from "path"
 
-  -Named Export/Import 
+  - Named Export/Import 
 
   export const Component
