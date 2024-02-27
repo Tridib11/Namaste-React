@@ -36,3 +36,4 @@ Currently, two official plugins are available:
   - Named Export/Import 
 
   export const Component
+  import {Component} from "path"
