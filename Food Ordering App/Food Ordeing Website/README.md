@@ -37,3 +37,7 @@ Currently, two official plugins are available:
 
   export const Component
   import {Component} from "path"
+
+## React Hooks
+
+- useState()
