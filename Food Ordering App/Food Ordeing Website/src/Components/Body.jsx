@@ -1,22 +1,24 @@
 import ResturantCard from "./ResturantCard";
 import resList from "../Utils/mockData";
+import { useState } from "react";
 
 
+let ResList=resList
 const Body = () => {
+  const [listOfResturant]=useState
+  
+  function topRatedButtonClicked(){
+    ResList=ResList.filter((res)=>res.info.avgRating>4.4)
+    console.log({ResList});
+  }
     return (
       <div className="body">
-        <div className="search">Search</div>
+        <div className="filter">
+          <button onClick={topRatedButtonClicked} className="filter-btn">Top Rated Resturants</button>
+        </div>
         <div className="resturant-container">
           {/* Passing PROPS to a function */}
-          {/* <ResturantCard resData={resList[0]} />
-          <ResturantCard resData={resList[1]} />
-          <ResturantCard resData={resList[2]} />
-          <ResturantCard resData={resList[3]} />
-          <ResturantCard resData={resList[4]} />
-          <ResturantCard resData={resList[5]} />
-          <ResturantCard resData={resList[6]} /> */}
-  
-          {resList.map((resturant) => (
+          {ResList.map((resturant) => (
             <ResturantCard
               key={resturant.info.id}
               resData={resturant}
