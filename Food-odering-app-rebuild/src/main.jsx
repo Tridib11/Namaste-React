@@ -1,37 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-const Header = () => {
-  return (
-    <div className="header">
-      <div className="logo-container">
-        <img
-          className="logo"
-          src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png"
-          alt="resturant-logo"
-        />
-      </div>
-      <div className="nav-items">
-        <ul>
-          <li>Home 🏠</li>
-          <li>About Us 👤</li>
-          <li>Contact Us 📞</li>
-          <li>Cart 🛒</li>
-        </ul>
-      </div>
-    </div>
-  );
-};
+import Header from "./components/Header";
 
 const ResturantCard = (props) => {
   const { resData } = props;
-  const {name,cuisines,costForTwo,avgRating,cloudinaryImageId}=resData?.info
-  const {slaString}=resData?.info.sla
+  const { name, cuisines, costForTwo, avgRating, cloudinaryImageId } =
+    resData?.info;
+  const { slaString } = resData?.info.sla;
   return (
     <div className="res-card" style={{ backgroundColor: "#f0f0f0" }}>
       <img
         className="resturant-logo"
-        src={"https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/"+cloudinaryImageId}
+        src={
+          "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/" +
+          cloudinaryImageId
+        }
         alt=""
       />
       <h3>{name}</h3>
@@ -1469,7 +1452,9 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="resturant-container">
-        {resList.map(resturant => <ResturantCard key={resturant.info.id} resData={resturant}/>)}
+        {resList.map((resturant) => (
+          <ResturantCard key={resturant.info.id} resData={resturant} />
+        ))}
       </div>
     </div>
   );
