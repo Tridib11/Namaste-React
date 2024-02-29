@@ -18,3 +18,23 @@
   padding: 10px;
   margin: 10px;
 }
+
+.res-card {
+  margin: 10px;
+  width: 250px;
+  padding: 10px;
+  transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
+}
+
+.res-card:hover {
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Adding shadow effect on hover */
+}
+.search{
+  padding: 10px;
+}
+
+.resturant-logo{
+  width: 100%;
+  height: 40%;
+}

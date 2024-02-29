@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-
 const Header = () => {
   return (
     <div className="header">
@@ -9,11 +8,11 @@ const Header = () => {
         <img
           className="logo"
           src="https://www.logodesign.net/logo/smoking-burger-with-lettuce-3624ld.png"
-          alt=""
+          alt="resturant-logo"
         />
       </div>
       <div className="nav-items">
-        <ul>
+        <ul> 
           <li>Home 🏠</li>
           <li>About Us 👤</li>
           <li>Contact Us 📞</li>
@@ -23,11 +22,33 @@ const Header = () => {
     </div>
   );
 };
+
+const ResturantCard=()=>{
+  return (
+    <div className="res-card"  style={{ backgroundColor: "#f0f0f0" }} >
+      <img className="resturant-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ggq5qx6bpw5nnlckiphi" alt="" />
+      <h3>Meghna Foods</h3>
+    </div>
+  )
+}
+const Body = () => {
+  return (
+    <div className="body">
+      <div className="search">Search</div>
+      <div className="resturant-container">
+        <ResturantCard/>
+      </div>
+    </div>
+  );
+};
 const AppLayout = () => {
-  return <div className="app">
-    <Header></Header>
-  </div>;
+  return (
+    <div className="app">
+      <Header/>
+      <Body/>
+    </div>
+  );
 };
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<AppLayout/>);
+root.render(<AppLayout />);
