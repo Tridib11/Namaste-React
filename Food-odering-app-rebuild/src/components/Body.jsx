@@ -1,3 +1,5 @@
+import ResturantCard from "./ResturantCard";
+
 const Body = () => {
     return (
       <div className="body">
