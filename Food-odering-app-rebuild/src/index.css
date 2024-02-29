@@ -24,7 +24,7 @@
 }
 .res-card {
   margin: 10px;
-  width: 250px;
+  width: 210px;
   padding: 10px;
   transition: box-shadow 0.3s ease; /* Adding transition for smooth effect */
 }
