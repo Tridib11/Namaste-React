@@ -27,7 +27,7 @@ const ResturantCard=()=>{
   return (
     <div className="res-card"  style={{ backgroundColor: "#f0f0f0" }} >
       <img className="resturant-logo" src="https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/ggq5qx6bpw5nnlckiphi" alt="" />
-      <h3>Meghna Foods</h3>
+      <h3>Dominos</h3>
     </div>
   )
 }
@@ -36,6 +36,10 @@ const Body = () => {
     <div className="body">
       <div className="search">Search</div>
       <div className="resturant-container">
+        <ResturantCard/>
+        <ResturantCard/>
+        <ResturantCard/>
+        <ResturantCard/>
         <ResturantCard/>
       </div>
     </div>
