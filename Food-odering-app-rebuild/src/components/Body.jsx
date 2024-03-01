@@ -8,6 +8,7 @@ const Body = () => {
   useEffect(() => {
     console.log("Use Effect called");
   }, []);
+  
   console.log("body rendered");
 
   return (
