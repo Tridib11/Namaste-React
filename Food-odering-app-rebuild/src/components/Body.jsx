@@ -5,14 +5,15 @@ const Body = () => {
   //Local State variable - Super Powerfull Variable
   const [listOfResturants, setListOfResturants] = useState(resList);
 
-  useEffect(()=>{
-    console.log("Use Effect called")
-  },[])
+  useEffect(() => {
+    console.log("Use Effect called");
+  }, []);
+  console.log("body rendered");
 
   return (
     <div className="body">
       <div className="filter">
-        <button 
+        <button
           onClick={() => {
             const filteredResturants = listOfResturants.filter(
               (res) => res.info.avgRating > 4
