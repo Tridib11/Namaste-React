@@ -1,9 +1,13 @@
 import ResturantCard from "./ResturantCard";
 import resList from "../utils/mockData";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const Body = () => {
   //Local State variable - Super Powerfull Variable
   const [listOfResturants, setListOfResturants] = useState(resList);
+
+  useEffect(()=>{
+    console.log("Use Effect called")
+  },[])
 
   return (
     <div className="body">
