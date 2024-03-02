@@ -5,18 +5,22 @@ const Body = () => {
   //Local State variable - Super Powerfull Variable
   const [listOfResturants, setListOfResturants] = useState(resList);
 
-  useEffect(() => {
-    fetchData();
-  }, []);
+
 
   const fetchData = async () => {
     const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.89960&lng=80.22090&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
+      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=12.823482712492375&lng=80.04622766229755&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
     );
 
-    const json = data.json();
+    const json = await data.json();
     console.log(json);
+    // setListOfResturants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
+    setListOfResturants(json.data.cards[1])
   };
+
+  useEffect(() => {
+    fetchData();
+  }, []);
 
   return (
     <div className="body">
